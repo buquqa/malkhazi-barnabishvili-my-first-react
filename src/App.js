@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import { Header } from "./component/common/header";
+import {
+  Sectionfirst,
+  Programlanguages,
+  Packagesection,
+  Secondnavigation,
+  Threeimages,
+  Secondthreeimages,
+  Threeimagesends,
+} from "./component/common/middlesection";
+import {
+  Laptop,
+  Awesome,
+  Otherthree,
+  Supporterstitle,
+  Supporters,
+  Coretitle,
+  Coretitleone,
+  Corelinetwo,
+  Manyimgtwo,
+} from "./component/common/beforefooter";
+import { Footer } from "./component/common/footer";
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Sectionfirst />
+      <Programlanguages />
+      <Packagesection />
+      <Secondnavigation />
+      <Threeimages />
+      <Secondthreeimages />
+      <Threeimagesends />
+      <Laptop />
+      <Awesome />
+      <Otherthree />
+      <Supporterstitle />
+      <Supporters />
+      <Coretitle />
+      <Coretitleone />
+      <Corelinetwo />
+      <Manyimgtwo />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
